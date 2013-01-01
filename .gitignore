@@ -18,3 +18,4 @@ Procfile
 .gitignore
 /server/secret.js
 
+.DS_Store
