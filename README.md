@@ -4,7 +4,6 @@ basic project skeleton with:
 - mongodb
 - jade
 - less
-
 - backbone.js
 - bootstrap
 - jquery
