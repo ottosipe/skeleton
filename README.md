@@ -1,4 +1,11 @@
-skeleton
-========
+basic project skeleton with:
 
-A basic project skeleton using node.js, express, and backbone.js. Email and mongoDB are baked right in too.
+- node.js
+- mongodb
+- jade
+- less
+
+- backbone.js
+- bootstrap
+- jquery
+
