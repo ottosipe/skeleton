@@ -6,7 +6,7 @@
     "start": "supervisor server"
   },
   "dependencies": {
-    "express": "3.0.5",
+    "express": "*",
     "jade": "*",
     "less-middleware": "*",
     "mongodb": "*",
