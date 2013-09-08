@@ -6,7 +6,7 @@ var nodemailer = require("nodemailer"),
 var smtpTransport = nodemailer.createTransport("SMTP", {
     service: "Mandrill",
     auth: {
-        email: process.env.EMAIL_USER,
+        user: process.env.EMAIL_USER,
         pass: process.env.EMAIL_PASS
     } // {user,pass}
 });
