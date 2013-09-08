@@ -17,5 +17,6 @@ npm-debug.log
 Procfile
 .gitignore
 secret.sh
+style.css
 
 .DS_Store
