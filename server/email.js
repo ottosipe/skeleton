@@ -1,12 +1,14 @@
 var nodemailer = require("nodemailer"),
-    secret     = require(__dirname + "/secret.js"),
     fs         = require("fs"),
     jade       = require("jade");
 
 // create reusable transport method (opens pool of SMTP connections)
 var smtpTransport = nodemailer.createTransport("SMTP", {
     service: "Mandrill",
-    auth: secret.email // {user,pass}
+    auth: {
+        email: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS
+    } // {user,pass}
 });
 
 exports.send = function sendMail(user, temp, cb) {

@@ -1,7 +1,6 @@
 
 var express = require("express")
-  , path = require('path')
-  , secret = require('./secret.js');
+  , path = require('path');
 
 module.exports = function configure(app) {
   app.configure(function(){

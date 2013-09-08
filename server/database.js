@@ -1,17 +1,16 @@
-var MongoDB 	= require("mongodb"),
-	secret 		= require("./secret.js");
+var MongoDB 	= require("mongodb");
 
 var API = module.exports = exports;
 
 (function(mongo) {
-	var Server		= mongo.Server(secret.db.url, secret.db.port)
-		, Database	= mongo.Db(secret.db.name, Server, {safe: false});
+	var Server		= mongo.Server(process.env.DB_URL, parseInt(process.env.DB_PORT))
+		, Database	= mongo.Db(process.env.DB_NAME, Server, {safe: false});
 
 	API.connect = function initMongoDB(cb) {
 		console.log('Starting DB Connection');
 		Database.open(function(err, db) {
 			if(err) { return cb(err); }
-			Database.authenticate(secret.db.user, secret.db.pass, cb);
+			Database.authenticate(process.env.DB_USER, process.env.DB_PASS, cb);
 			API.db = Database;
 		});
 	};

@@ -1,10 +1,3 @@
 basic project skeleton with:
 
-- node.js
-- mongodb
-- jade
-- less
-- backbone.js
-- bootstrap
-- jquery
-
+Run `. secret.sh` beforehand in order to populate the env. variables

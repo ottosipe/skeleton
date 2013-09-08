@@ -16,6 +16,6 @@ npm-debug.log
 /node_modules
 Procfile
 .gitignore
-/server/secret.js
+secret.sh
 
 .DS_Store
